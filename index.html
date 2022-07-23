@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Box practice</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <style></style>
+</head>
+
+<body>
+  <header>
+    <h1>CSS Snippit Cheatsheet</h1>
+    <h3 id="description">
+      Select any code snippit code below for you to copy!
+    </h3>
+  </header>
+  <main>
+    <section class="box">
+      <header class="div-header">Display</header>
+      <p>
+        This defines a flex container; inline or block depending on the given
+        value. It enables a flex context for all its direct children.
+      </p>
+      <code class="snippit">.container { display: flex; /* or inline-flex */ }</code>
+    </section>
+    <section class="box">
+      <header class="div-header">Flex-Direction</header>
+      <p>
+        This establishes the main-axis, thus defining the direction flex items
+        are placed in the flex container.
+      </p>
+      <code class="snippit">.container { flex-direction: row | row-reverse | column |
+          column-reverse; }
+        </code>
+    </section>
+    <section class="box">
+      <header class="div-header">Justify-Content</header>
+      <p>This defines the alignment along the main axis.</p>
+      <code class="snippit">.container { align-content: flex-start;</code>
+    </section>
+
+    <section class="box">
+      <header class="div-header">Align-Items</header>
+      <p>
+        This defines the default behavior for how flex items are laid out
+        along the cross axis on the current line.
+      </p>
+      <code class="snippit"> .container { align-items: stretch;</code>
+    </section>
+    <section class="box">
+      <header class="div-header">Align-Content</header>
+      <p>
+        This aligns a flex container’s lines within when there is extra space
+        in the cross-axis, similar to how justify-content aligns individual
+        items within the main-axis.
+      </p>
+      <code class="snippit">.container { align-content: flex-start</code>
+    </section>
+    <section class="box">
+      <header class="div-header">Gap, Row-Gap, Column-Gap</header>
+      <p>
+        The gap property explicitly controls the space between flex items.
+      </p>
+      <code class="snippit">.container { display: flex; ... gap: 10px; gap: 10px 20px;</code>
+    </section>
+  </main>
+  <footer>
+    <p>Made with CSS</p>
+  </footer>
+</body>
+
+</html>

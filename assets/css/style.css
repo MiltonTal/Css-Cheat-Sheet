@@ -1,0 +1,104 @@
+:root{
+    --fade: linear-gradient(#e66465, #9198e5);
+    --color: plum;
+    --raduis: 15%;
+    --b_style: groove;
+}
+
+html, body{
+    background: var(--fade);
+    min-height: 100%;
+    font-family: sans-serif ;
+    
+}
+
+header, footer{
+    text-align: center;
+}
+
+h1, #description{
+   background:var(--color);
+   border-style: var(--b_style);
+   border-radius: var(--raduis);
+   
+}
+
+
+main{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.box{
+    height: auto;
+    width: 250px;
+    margin: 10px;
+    background: var(--color);
+    border-style: var(--b_style);
+    border-radius: var(--raduis);
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    
+}
+
+
+
+.div-header{
+    background: pink;
+    border-style: solid;
+    width: 200px;
+    height: auto;
+    position: absolute; top: -10px; left: 40px;
+}
+
+p{
+padding: 20px;
+
+}
+
+.snippit{
+    background: var(--fade);
+    border-style: var(--b_style);
+    width: 100px;
+    height: auto;
+    padding: 30px;
+    display: inline-flex;
+
+    user-select: all;
+    border-radius: var(--raduis);
+}
+
+.box:hover{
+    box-shadow: 5px 10px 5px magenta;
+}
+
+.snippit:hover{
+    color: rebeccapurple;
+    font-weight: bolder;
+}
+
+@media all and (min-width: 992px){
+    .box{
+        width: 25%;
+    }
+}
+@media screen and (max-width:768px){
+    .box{
+        width: 50%;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    .box{
+        width: 100%;
+    }
+    
+}
+
+    
+
+
